@@ -1,8 +1,8 @@
 package com.nagarro.models.dto.responses;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public record OrderDTOResponse(Long id, String status, String customerName,
-                               String productName, Timestamp createDate, Timestamp deliveryDate) {
+                               String productName, LocalDateTime createDate) {
 
 }

@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
@@ -26,8 +27,6 @@ public class OrderDBO {
     private String productName;
 
     @Column(name = "create_date")
-    private Timestamp createDate;
+    private LocalDateTime createDate;
 
-    @Column(name = "delivery_date")
-    private Timestamp deliveryDate;
 }

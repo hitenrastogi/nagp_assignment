@@ -1,0 +1,2 @@
+insert into orders ("status", "customer_name", "product_name", "create_date") values ("New", "Hiten", "Shorts", "2021-12-08T10:23:26.596563");
+insert into orders ("status", "customer_name", "product_name", "create_date") values ("Delivered", "Hiten", "Shoes", "2021-12-08T10:23:26.596563");

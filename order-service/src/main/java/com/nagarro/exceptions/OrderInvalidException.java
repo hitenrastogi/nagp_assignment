@@ -12,8 +12,6 @@ public class OrderInvalidException extends RuntimeException {
         super(message, cause);
     }
 
-    public OrderInvalidException(Throwable cause) {
-        super(cause);
-    }
+    public OrderInvalidException(Throwable cause) { super(cause); }
 
 }

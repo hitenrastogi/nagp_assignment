@@ -10,7 +10,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/orders")
 @Validated
 @RequiredArgsConstructor
 public class OrderController {
@@ -23,8 +23,8 @@ public class OrderController {
         return new ResponseEntity<>("Order created", HttpStatus.CREATED);
     }
 
-    @PostMapping(value = "/{id}", produces = {"application/json"})
-    public ResponseEntity<OrderDTOResponse> getOrder(@PathVariable(value="id") Long id) {
+    @GetMapping(value = "/{id}", produces = {"application/json"})
+    public ResponseEntity<OrderDTOResponse> getOrder(@PathVariable("id") Long id) {
         return new ResponseEntity<>(orderService.findOrderById(id), HttpStatus.OK);
     }
 
